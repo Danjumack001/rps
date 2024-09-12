@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOve</title>
+    <script src="assw.js"></script>
+</head>
+
+<style>
+*{
+    box-sizing: border-box;
+    
+}
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+    }
+    section{
+        display: flex;
+    background-color: rgb(44, 44, 255);
+    height:270px;
+    width: 30%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 1px 2px rgb(54, 54, 54);
+    transform: translateX(400%);
+    transition: transform 0.5s ease;    
+    }
+     section:nth-of-type(even){
+        transform: translateX(-400%);
+    }
+
+section.show{
+      transform: translateX(0);
+    
+}
+</style>
+<body>
+
+    <main>
+        <section id="one" class="section"></section>
+        <section id="two" class="section"></section>
+        <section id="three" class="section"></section>
+        <section id="four" class="section"></section>
+        <section id="five" class="section"></section>
+        <section id="six" class="section"></section>
+        <section id="seven" class="section"></section>
+    </main>
+    
+</body>
+</html>
